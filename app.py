@@ -40,7 +40,7 @@ def drow_plot(y_test, y_pred):
     plt.title('Result of predicted price of avocado in the world')
     plt.xlabel('Actual Price')
     plt.ylabel('Predicted Price')
-    plt.legend(['Actual Price', 'Predicted Price'])
+    plt.legend(['Predicted Price', 'Actual Price'])
     st.pyplot(fig)
 
 def get_prediction(X_train, X_test, y_train):
