@@ -1,3 +1,15 @@
+import streamlit as st
+import pandas as pd
+import numpy as np
+from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
+import matplotlib.pyplot as plt
+from pandas.plotting import scatter_matrix
+from sklearn.preprocessing import MinMaxScaler, LabelEncoder
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor
+import sklearn.metrics as metrics
+import warnings
 warnings.filterwarnings('ignore')
 
 df = pd.read_csv('./data/avocado.csv', index_col = 0)
